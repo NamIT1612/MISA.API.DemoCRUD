@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../css/pages/Student.css" rel="stylesheet" />
+    <link href="../css/pages/StudentCreate.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+    <!--menu-->
+    <div class="menu">
+        <!-- logo -->
+        <div id="logo">
+            <div class="iconBar">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="logo-text">
+                <h3>STUDENTS</h3>
+            </div>
+        </div>
+        <!-- menu - item -->
+        <!--<div id="menu-item">
+
+
+            <div class="item-logo"><i class="fas fa-home"></i></div>
+            <div class="item-text"><h5>TỔNG QUAN</h5></div>
+
+        </div>-->
+    </div>
+    <div class="content">
+
+        <div class="content-header"></div>
+        <div class="content-body">
+            <div class="page-title">
+                <h3>DANH MỤC SINH VIÊN</h3>
+            </div>
+            <div class="grid-content">
+                <div class="toolbar">
+                    <button class="iconButton" id="btnAdd"><i class="fas fa-plus-square"></i>&nbsp;&nbsp; Thêm </button>
+                    <button class="iconButton" id="btnEdit"><i class="fas fa-pencil-alt"></i>&nbsp;&nbsp; Sửa</button>
+                    <button class="iconButton" id="btnDelete"><i class="fas fa-trash-alt"></i>&nbsp;&nbsp; Xóa </button>
+                </div>
+                <div class="grid">
+                    <table id="tbStudent" border="1" cellpadding="0">
+                        <thead>
+                            <tr class="">
+                                <th>Mã Sinh Viên</th>
+                                <th>Tên Sinh Viên</th>
+                                <th>Năm Sinh</th>
+                                <th>Thao Tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!--<tr>
+                                <td>2001190683</td>
+                                <td>Nguyễn Nhựt Nam</td>
+                                <td>2001</td>
+                            </tr>
+                            <tr>
+                                <td>2001190683</td>
+                                <td>Nguyễn Nhựt Nam</td>
+                                <td>2001</td>
+                            </tr>
+                            <tr>
+                                <td>2001190683</td>
+                                <td>Nguyễn Nhựt Nam</td>
+                                <td>2001</td>
+                            </tr>-->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dialog-modal">
+    </div>
+    <div class="dialog">
+        <div class="dialog-title">
+            <div class="title-text"> Thông tin học sinh </div>
+            <div class="title-close-button">
+                <i class="fas fa-window-close"></i>
+            </div>
+
+        </div>
+        <div class="dialog-body">
+            <div class="row">
+                <label>Mã Sinh Viên :</label>
+                <input id="txtId" type="Text" />
+            </div>
+            <div class="row">
+                <label>Tên Sinh Viên :</label>
+                <input id="txtName" type="Text" />
+            </div>
+            <div class="row">
+                <label>Năm Sinh :</label>
+                <input id="txtBirthday" type="Text" />
+            </div>
+
+        </div>
+        <div class="dialog-footer">
+            <button id="btnSave">Lưu</button>
+            <button id="btnCancel">Thoát</button>
+        </div>
+
+    </div>
+    <!--<div class="dialog-modal-update">
+    </div>
+    <div class="dialog-update">
+        <div class="dialog-title-update">
+            <div class="title-text"> Thông tin học sinh </div>
+            <div class="title-close-button">
+                <i class="fas fa-window-close"></i>
+            </div>
+
+        </div>
+        <div class="dialog-body-update">
+            <div class="row">
+                <label>Tên Sinh Viên :</label>
+                <input id="txtNameUpdate" type="Text" />
+            </div>
+            <div class="row">
+                <label>Năm Sinh :</label>
+                <input id="txtBirthdayUpdate" type="Text" />
+            </div>
+
+        </div>
+        <div class="dialog-footer-update">
+            <button id="btnSaveUpDate">Lưu</button>
+            <button id="btnCancelUpDate">Thoát</button>
+        </div>
+
+    </div>-->
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/Student.js"></script>
+</body>
+</html>
